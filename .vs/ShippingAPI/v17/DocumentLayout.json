@@ -1,0 +1,205 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|e:\\safiya\\1- iti\\itigraduationproject\\shippingapi\\shippingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|solutionrelative:shippingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|e:\\safiya\\1- iti\\itigraduationproject\\shippingapi\\shippingapi\\dtos\\custompricedtos\\addcustompricedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|solutionrelative:shippingapi\\dtos\\custompricedtos\\addcustompricedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|e:\\safiya\\1- iti\\itigraduationproject\\shippingapi\\shippingapi\\unitofworks\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|solutionrelative:shippingapi\\unitofworks\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|e:\\safiya\\1- iti\\itigraduationproject\\shippingapi\\shippingapi\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|solutionrelative:shippingapi\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|e:\\safiya\\1- iti\\itigraduationproject\\shippingapi\\shippingapi\\models\\customprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|solutionrelative:shippingapi\\models\\customprice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|e:\\safiya\\1- iti\\itigraduationproject\\shippingapi\\shippingapi\\models\\courierprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|solutionrelative:shippingapi\\models\\courierprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|e:\\safiya\\1- iti\\itigraduationproject\\shippingapi\\shippingapi\\models\\financialtransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|solutionrelative:shippingapi\\models\\financialtransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|e:\\safiya\\1- iti\\itigraduationproject\\shippingapi\\shippingapi\\models\\accounttransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|solutionrelative:shippingapi\\models\\accounttransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|e:\\safiya\\1- iti\\itigraduationproject\\shippingapi\\shippingapi\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|solutionrelative:shippingapi\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|e:\\safiya\\1- iti\\itigraduationproject\\shippingapi\\shippingapi\\models\\safe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|solutionrelative:shippingapi\\models\\safe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|e:\\safiya\\1- iti\\itigraduationproject\\shippingapi\\shippingapi\\models\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8EDE89D2-AC10-42F5-8ADD-96D05A451081}|ShippingAPI\\ShippingAPI.csproj|solutionrelative:shippingapi\\models\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "addCustomPriceDTO.cs",
+              "DocumentMoniker": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\DTOS\\CustomPriceDTOs\\addCustomPriceDTO.cs",
+              "RelativeDocumentMoniker": "ShippingAPI\\DTOS\\CustomPriceDTOs\\addCustomPriceDTO.cs",
+              "ToolTip": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\DTOS\\CustomPriceDTOs\\addCustomPriceDTO.cs",
+              "RelativeToolTip": "ShippingAPI\\DTOS\\CustomPriceDTOs\\addCustomPriceDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T17:46:06.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Program.cs",
+              "RelativeDocumentMoniker": "ShippingAPI\\Program.cs",
+              "ToolTip": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Program.cs",
+              "RelativeToolTip": "ShippingAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T17:27:25.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\UnitOfWorks\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "ShippingAPI\\UnitOfWorks\\UnitOfWork.cs",
+              "ToolTip": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\UnitOfWorks\\UnitOfWork.cs",
+              "RelativeToolTip": "ShippingAPI\\UnitOfWorks\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T17:26:12.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CourierProfile.cs",
+              "DocumentMoniker": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\CourierProfile.cs",
+              "RelativeDocumentMoniker": "ShippingAPI\\Models\\CourierProfile.cs",
+              "ToolTip": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\CourierProfile.cs",
+              "RelativeToolTip": "ShippingAPI\\Models\\CourierProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T17:24:54.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomPrice.cs",
+              "DocumentMoniker": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\CustomPrice.cs",
+              "RelativeDocumentMoniker": "ShippingAPI\\Models\\CustomPrice.cs",
+              "ToolTip": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\CustomPrice.cs",
+              "RelativeToolTip": "ShippingAPI\\Models\\CustomPrice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T17:24:16.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FinancialTransfer.cs",
+              "DocumentMoniker": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\FinancialTransfer.cs",
+              "RelativeDocumentMoniker": "ShippingAPI\\Models\\FinancialTransfer.cs",
+              "ToolTip": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\FinancialTransfer.cs",
+              "RelativeToolTip": "ShippingAPI\\Models\\FinancialTransfer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T17:24:05.33Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "ShippingAPI\\Models\\ApplicationUser.cs",
+              "ToolTip": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "ShippingAPI\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T17:21:14.377Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Branch.cs",
+              "DocumentMoniker": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\Branch.cs",
+              "RelativeDocumentMoniker": "ShippingAPI\\Models\\Branch.cs",
+              "ToolTip": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\Branch.cs",
+              "RelativeToolTip": "ShippingAPI\\Models\\Branch.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T17:00:55.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AccountTransaction.cs",
+              "DocumentMoniker": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\AccountTransaction.cs",
+              "RelativeDocumentMoniker": "ShippingAPI\\Models\\AccountTransaction.cs",
+              "ToolTip": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\AccountTransaction.cs",
+              "RelativeToolTip": "ShippingAPI\\Models\\AccountTransaction.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T16:53:53.836Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Safe.cs",
+              "DocumentMoniker": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\Safe.cs",
+              "RelativeDocumentMoniker": "ShippingAPI\\Models\\Safe.cs",
+              "ToolTip": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\Safe.cs",
+              "RelativeToolTip": "ShippingAPI\\Models\\Safe.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA0wBgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T16:45:23.654Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Bank.cs",
+              "DocumentMoniker": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\Bank.cs",
+              "RelativeDocumentMoniker": "ShippingAPI\\Models\\Bank.cs",
+              "ToolTip": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\Models\\Bank.cs",
+              "RelativeToolTip": "ShippingAPI\\Models\\Bank.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwBwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T16:45:21.287Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

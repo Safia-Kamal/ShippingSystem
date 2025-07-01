@@ -1,0 +1,202 @@
+[
+  {
+    "ContainingType": "ShippingAPI.Controllers.CustomPriceController",
+    "Method": "getAllCustomPrices",
+    "RelativePath": "api/CustomPrice",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.CustomPriceController",
+    "Method": "addCustomPrice",
+    "RelativePath": "api/CustomPrice",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "customPriceDto",
+        "Type": "ShippingAPI.DTOS.CustomPriceDTOs.addCustomPriceDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.CustomPriceController",
+    "Method": "getCustomPriceById",
+    "RelativePath": "api/CustomPrice/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.CustomPriceController",
+    "Method": "updateCustomPrice",
+    "RelativePath": "api/CustomPrice/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "customPriceDto",
+        "Type": "ShippingAPI.DTOS.CustomPriceDTOs.addCustomPriceDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.CustomPriceController",
+    "Method": "deleteCustomPrice",
+    "RelativePath": "api/CustomPrice/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.OrderController",
+    "Method": "getAllOrders",
+    "RelativePath": "api/Order",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.OrderController",
+    "Method": "getOrderById",
+    "RelativePath": "api/Order/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.ShippingTypeController",
+    "Method": "GetAllShippingTypes",
+    "RelativePath": "api/ShippingType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.ShippingTypeController",
+    "Method": "CreateShippingType",
+    "RelativePath": "api/ShippingType",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "shippingTypeDto",
+        "Type": "ShippingAPI.DTOS.ShippingTypeDTOs.addShippingTypeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.ShippingTypeController",
+    "Method": "GetShippingTypeById",
+    "RelativePath": "api/ShippingType/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.ShippingTypeController",
+    "Method": "UpdateShippingType",
+    "RelativePath": "api/ShippingType/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "shippingTypeDto",
+        "Type": "ShippingAPI.DTOS.ShippingTypeDTOs.addShippingTypeDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.ShippingTypeController",
+    "Method": "DeleteShippingType",
+    "RelativePath": "api/ShippingType/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.ShippingTypeController",
+    "Method": "GetShippingTypeByName",
+    "RelativePath": "api/ShippingType/name/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
