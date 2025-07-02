@@ -80,6 +80,12 @@ namespace ShippingAPI.MappingConfigs
                 .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
 
                 .ReverseMap();
+            //branch mapping
+            CreateMap<Branch, branchDTO>().ReverseMap();
+            CreateMap<Branch, BranchIDdto>()
+                .ForMember(dest => dest.Id, opt => opt.MapFrom(src => src.Id))
+                .ForMember(dest => dest.Name, opt => opt.MapFrom(src => src.Name))
+                .ReverseMap();
 
 
 
