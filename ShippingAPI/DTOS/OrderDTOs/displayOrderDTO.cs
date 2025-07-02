@@ -35,6 +35,7 @@ namespace ShippingAPI.DTOS.OrderDTOs
         //تاجر 
 
         public string? TraderName { get; set; }
+        public string? CourierName { get; set; }
 
 
     }

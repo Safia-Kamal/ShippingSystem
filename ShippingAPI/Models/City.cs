@@ -26,5 +26,6 @@ namespace ShippingAPI.Models
         public virtual Governorate Governorate { get; set; } = null!;
         public virtual ICollection<Order> Orders { get; set; } = new List<Order>();
         public virtual ICollection<Branch> Branches { get; set; } = new List<Branch>();
+        public virtual ICollection<TraderProfile> TraderProfiles { get; set; } = new List<TraderProfile>();
     }
 }

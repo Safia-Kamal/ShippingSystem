@@ -47,8 +47,11 @@ namespace ShippingAPI.Models
         [ForeignKey("TraderProfile")]
         public string? TraderId { get; set; }
         public virtual TraderProfile? TraderProfile { get; set; }
+        //مندوب
+        [ForeignKey("CourierProfile")]
+        public string? CourierId { get; set; }
+        public virtual TraderProfile? CourierProfile { get; set; }
 
-       
     }
     public enum OrderStatus
     {

@@ -32,6 +32,7 @@ namespace ShippingAPI.MappingConfigs
                 {
                     dest.BranchName = src.Branch.Name;
                     dest.TraderName = src.TraderProfile.User.FullName;
+                    dest.CourierName = src.CourierProfile.User.FullName;
                     dest.CityName = src.City.Name;
                     dest.RejectionReason = src.RejectionReason.Reason;
                     dest.GovernorateName = src.Governorate.Name;
