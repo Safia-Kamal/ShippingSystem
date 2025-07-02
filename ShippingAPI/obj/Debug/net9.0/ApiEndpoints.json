@@ -1,5 +1,111 @@
 [
   {
+    "ContainingType": "ShippingAPI.Controllers.CitiesController",
+    "Method": "GetCities",
+    "RelativePath": "api/Cities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.CitiesController",
+    "Method": "addCity",
+    "RelativePath": "api/Cities",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityDto",
+        "Type": "ShippingAPI.DTOS.city_govern.cityDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.CitiesController",
+    "Method": "editCity",
+    "RelativePath": "api/Cities",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cityDto",
+        "Type": "ShippingAPI.DTOS.city_govern.cityidDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.CitiesController",
+    "Method": "getcitybyid",
+    "RelativePath": "api/Cities/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.CitiesController",
+    "Method": "deleteCity",
+    "RelativePath": "api/Cities/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.CitiesController",
+    "Method": "getcitybyname",
+    "RelativePath": "api/Cities/getcitybyname/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.CourierController",
+    "Method": "Createcourier",
+    "RelativePath": "api/Courier/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "courierdto",
+        "Type": "ShippingAPI.DTOS.courier.CreateCourierDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ShippingAPI.Controllers.CustomPriceController",
     "Method": "getAllCustomPrices",
     "RelativePath": "api/CustomPrice",
@@ -79,6 +185,96 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ShippingAPI.Controllers.GovernratesController",
+    "Method": "GetGovernrates",
+    "RelativePath": "api/Governrates",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.GovernratesController",
+    "Method": "AddGovernrate",
+    "RelativePath": "api/Governrates",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "governrateDto",
+        "Type": "ShippingAPI.DTOS.city_govern.governrateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.GovernratesController",
+    "Method": "UpdateGovernrate",
+    "RelativePath": "api/Governrates",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "governrateDto",
+        "Type": "ShippingAPI.DTOS.city_govern.governrateidDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.GovernratesController",
+    "Method": "GetGovernrateById",
+    "RelativePath": "api/Governrates/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.GovernratesController",
+    "Method": "DeleteGovernrate",
+    "RelativePath": "api/Governrates/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.GovernratesController",
+    "Method": "GetGovernrateByName",
+    "RelativePath": "api/Governrates/getgovernratebyname/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "ShippingAPI.Controllers.OrderController",
     "Method": "getAllOrders",
     "RelativePath": "api/Order",
@@ -90,8 +286,188 @@
   },
   {
     "ContainingType": "ShippingAPI.Controllers.OrderController",
+    "Method": "addOrder",
+    "RelativePath": "api/Order",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderDTO",
+        "Type": "ShippingAPI.DTOS.OrderDTOs.addOrderDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.OrderController",
     "Method": "getOrderById",
     "RelativePath": "api/Order/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.OrderController",
+    "Method": "updateOrder",
+    "RelativePath": "api/Order/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "orderDTO",
+        "Type": "ShippingAPI.DTOS.OrderDTOs.addOrderDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.OrderController",
+    "Method": "deleteOrder",
+    "RelativePath": "api/Order/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.OrderController",
+    "Method": "getOrdersByBranch",
+    "RelativePath": "api/Order/getByBranch/{branchId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "branchId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.OrderController",
+    "Method": "getOrdersByStatus",
+    "RelativePath": "api/Order/getByStatus/{status}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.OrderController",
+    "Method": "getOrdersByTrader",
+    "RelativePath": "api/Order/getByTrader/{traderId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "traderId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.OrderItemController",
+    "Method": "getAllOrdersItems",
+    "RelativePath": "api/OrderItem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.OrderItemController",
+    "Method": "addOrderItem",
+    "RelativePath": "api/OrderItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "orderItemDTO",
+        "Type": "ShippingAPI.DTOS.OrderItemDTOs.addOrderItemDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.OrderItemController",
+    "Method": "editOrderItem",
+    "RelativePath": "api/OrderItem",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "orderItemDTO",
+        "Type": "ShippingAPI.DTOS.OrderItemDTOs.addOrderItemDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.OrderItemController",
+    "Method": "deleteOrderItem",
+    "RelativePath": "api/OrderItem",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ShippingAPI.Controllers.OrderItemController",
+    "Method": "getOrderItem",
+    "RelativePath": "api/OrderItem/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

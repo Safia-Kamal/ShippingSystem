@@ -8,5 +8,9 @@ namespace ShippingAPI.Repositories
         public GovernateRepo(ShippingContext db) : base(db)
         {
         }
+        public Governorate getByName(string name)
+        {
+            return db.Governorates.FirstOrDefault(g => g.Name == name);
+        }
     }
 }

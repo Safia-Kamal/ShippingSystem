@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\ShippingAPI.csproj": {}
+    "D:\\ITIMATRIAL\\graduation\\ShippingAPI\\ShippingAPI.csproj": {}
   },
   "projects": {
-    "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\ShippingAPI.csproj": {
+    "D:\\ITIMATRIAL\\graduation\\ShippingAPI\\ShippingAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\ShippingAPI.csproj",
+        "projectUniqueName": "D:\\ITIMATRIAL\\graduation\\ShippingAPI\\ShippingAPI.csproj",
         "projectName": "ShippingAPI",
-        "projectPath": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\ShippingAPI.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\obj\\",
+        "projectPath": "D:\\ITIMATRIAL\\graduation\\ShippingAPI\\ShippingAPI.csproj",
+        "packagesPath": "C:\\Users\\Hager\\.nuget\\packages\\",
+        "outputPath": "D:\\ITIMATRIAL\\graduation\\ShippingAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hager\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -83,6 +83,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.6, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[9.0.1, )"
             },
             "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
