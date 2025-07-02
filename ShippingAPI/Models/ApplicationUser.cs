@@ -7,12 +7,8 @@ namespace ShippingAPI.Models
     {
         [Required]
         public string FullName { get; set; }
-
         [Required]
         public string Address { get; set; }
-
-        // Branch افتراضي (لو عنده واحد رئيسي فقط)
-        public string Branch { get; set; }
 
         // Navigation
         public virtual AdminProfile AdminProfile { get; set; }

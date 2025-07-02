@@ -13,5 +13,7 @@ namespace ShippingAPI.Models
         public string Name { get; set; } = string.Empty;
 
         public virtual ICollection<City> Cities { get; set; } = new List<City>();
+        public virtual ICollection<TraderProfile> TraderProfiles { get; set; } = new List<TraderProfile>();
+
     }
 }
