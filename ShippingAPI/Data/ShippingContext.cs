@@ -36,6 +36,8 @@ namespace ShippingAPI.Data
         public DbSet<CourierProfile> CourierProfiles { get; set; }
         public DbSet<CourierGovernorate> CourierGovernorates { get; set; }
         public DbSet<CourierBranch> CourierBranches { get; set; }
-
+        public DbSet<PermissionAction> PermissionActions { get; set; }
+        public DbSet<ActionType> ActionTypes { get; set; }
+        public DbSet<UserPermission> UserPermissions { get; set; }
     }
 }

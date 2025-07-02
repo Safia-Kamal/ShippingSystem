@@ -7,13 +7,12 @@ namespace ShippingAPI.Models
     {
         [Required]
         public string FullName { get; set; }
-
         [Required]
         public string Address { get; set; }
-
-        // Branch افتراضي (لو عنده واحد رئيسي فقط)
-        public string Branch { get; set; }
-
+        public string? Branch { get; set; }
+        public string? CurrentToken { get; set; }
+        public DateTime? TokenExpiration { get; set; }
+        public bool IsActive { get; set; } = true;
         // Navigation
         public virtual AdminProfile AdminProfile { get; set; }
         public virtual TraderProfile TraderProfile { get; set; }
