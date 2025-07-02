@@ -31,6 +31,9 @@ namespace ShippingAPI.UnitOfWorks
         public ShippingTypeRepo shippingTypeRepo;
         public TraderProfileRepo traderProfileRepo;
         public WeightRepo weightRepo;
+        public PermissionActionRepo permissionActionRepo;
+        public UserPermissionRepo userPermissionRepo;
+        public ActionPermissionRepo actionPermissionRepo;
 
         public UnitOfWork(ShippingContext context) {
             this.context = context;
@@ -255,10 +258,40 @@ namespace ShippingAPI.UnitOfWorks
                 return weightRepo;
             }
         }
-
+        public PermissionActionRepo PermissionActionRepo
+        {
+            get
+            {
+                if (permissionActionRepo == null)
+                    permissionActionRepo = new PermissionActionRepo(context);
+                return permissionActionRepo;
+            }
+        }
+        public ActionPermissionRepo ActionPermissionRepo
+        {
+            get
+            {
+                if (actionPermissionRepo == null)
+                    actionPermissionRepo = new ActionPermissionRepo(context);
+                return actionPermissionRepo;
+            }
+        }
+        public UserPermissionRepo UserPermissionRepo
+        {
+            get
+            {
+                if (userPermissionRepo == null)
+                    userPermissionRepo = new UserPermissionRepo(context);
+                return userPermissionRepo;
+            }
+        }
         public void save()
         {
             context.SaveChanges();
+        }
+        public async Task SaveAsync()
+        {
+            await context.SaveChangesAsync();
         }
 
 

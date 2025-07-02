@@ -14,12 +14,18 @@ namespace ShippingAPI.Models
         [Required]
         public string StoreName { get; set; }
 
-        [Required]
-        public string Governorate { get; set; }
+        [ForeignKey("Governorate")]
+        public int GovernorateId { get; set; }
+        public virtual Governorate Governorate { get; set; }
 
-        [Required]
-        public string City { get; set; }
 
+        [ForeignKey("City")]
+        public int CityId { get; set; }
+        public virtual City City { get; set; }
+
+        [ForeignKey("Branch")]
+        public int BranchId { get; set; }
+        public virtual Branch Branch { get; set; }
         public decimal CustomPickupCost { get; set; }
 
         [Range(0, 100)]

@@ -31,5 +31,6 @@ namespace ShippingAPI.DTOS.OrderDTOs
 
         public int? BranchId { get; set; }
         public string? TraderId { get; set; }
+        public string? CourierId { get; set; }
     }
 }

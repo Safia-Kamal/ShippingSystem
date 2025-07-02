@@ -2,6 +2,9 @@
 using ShippingAPI.DTOS.CustomPriceDTOs;
 using ShippingAPI.DTOS.OrderDTOs;
 using ShippingAPI.DTOS.OrderItemDTOs;
+using ShippingAPI.DTOS.Permissions;
+using ShippingAPI.DTOS.Register;
+using ShippingAPI.DTOS.RegisterAndLogin;
 using ShippingAPI.DTOS.ShippingTypeDTOs;
 using ShippingAPI.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
@@ -32,6 +35,7 @@ namespace ShippingAPI.MappingConfigs
                 {
                     dest.BranchName = src.Branch.Name;
                     dest.TraderName = src.TraderProfile.User.FullName;
+                    dest.CourierName = src.CourierProfile.User.FullName;
                     dest.CityName = src.City.Name;
                     dest.RejectionReason = src.RejectionReason.Reason;
                     dest.GovernorateName = src.Governorate.Name;
@@ -41,7 +45,19 @@ namespace ShippingAPI.MappingConfigs
             // OrderItem Mapping
             CreateMap<OrderItem, addOrderItemDTO>().ReverseMap();
             CreateMap<OrderItem, displayOrderItemDTO>().ReverseMap();
-
+            CreateMap<ApplicationUser, UserProfileDTO>()
+      .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.UserName))
+      .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Email))
+      .ForMember(dest => dest.FullName, opt => opt.MapFrom(src => src.FullName))
+      .ForMember(dest => dest.Address, opt => opt.MapFrom(src => src.Address));
+            CreateMap<Permission, PermissionDto>().ReverseMap();
+            CreateMap<ActionType, ActionTypeDto>().ReverseMap();
+            CreateMap<PermissionAction, PermissionActionDto>().ReverseMap();
+            CreateMap<RegisterDTO, ApplicationUser>()
+        .ForMember(dest => dest.UserName, opt => opt.MapFrom(src => src.UserName))
+        .ForMember(dest => dest.Email, opt => opt.MapFrom(src => src.Email))
+        .ForMember(dest => dest.FullName, opt => opt.MapFrom(src => src.FullName))
+        .ForMember(dest => dest.Address, opt => opt.MapFrom(src => src.Address));
         }
     }
 }
