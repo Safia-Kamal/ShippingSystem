@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\ShippingAPI.csproj": {}
+    "E:\\Safiya\\1- iti\\ITIProject\\ShippingAPI\\ShippingAPI\\ShippingAPI.csproj": {}
   },
   "projects": {
-    "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\ShippingAPI.csproj": {
+    "E:\\Safiya\\1- iti\\ITIProject\\ShippingAPI\\ShippingAPI\\ShippingAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\ShippingAPI.csproj",
+        "projectUniqueName": "E:\\Safiya\\1- iti\\ITIProject\\ShippingAPI\\ShippingAPI\\ShippingAPI.csproj",
         "projectName": "ShippingAPI",
-        "projectPath": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\ShippingAPI.csproj",
+        "projectPath": "E:\\Safiya\\1- iti\\ITIProject\\ShippingAPI\\ShippingAPI\\ShippingAPI.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "E:\\Safiya\\1- iti\\ITIGraduationProject\\ShippingAPI\\ShippingAPI\\obj\\",
+        "outputPath": "E:\\Safiya\\1- iti\\ITIProject\\ShippingAPI\\ShippingAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
