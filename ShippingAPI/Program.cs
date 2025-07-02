@@ -4,8 +4,11 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using ShippingAPI.Data;
+using ShippingAPI.Interfaces.LoginAndRegister;
+using ShippingAPI.Interfaces.Permissions;
 using ShippingAPI.MappingConfigs;
 using ShippingAPI.Models;
+using ShippingAPI.Services.Permissions;
 using ShippingAPI.UnitOfWorks;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,11 +60,13 @@ namespace ShippingAPI
 
             builder.Services.AddControllers();
             builder.Services.AddDbContext<ShippingContext>(options =>
-                options.UseLazyLoadingProxies().UseSqlServer(builder.Configuration.GetConnectionString("CS")));
+                options.UseLazyLoadingProxies().UseSqlServer(builder.Configuration.GetConnectionString("Shipping")));
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
             builder.Services.AddScoped<UnitOfWork>();
+            builder.Services.AddScoped<IAuthService, AuthService>();
+            builder.Services.AddScoped<IPermissionService, PermissionService>();
             //builder.Services.AddScoped<IAuthService,AuthService>();
             builder.Services.AddAutoMapper(typeof(MappingConfig));
 
@@ -83,7 +88,7 @@ namespace ShippingAPI
             app.UseHttpsRedirection();
 
             app.UseAuthorization();
-
+            app.UseCors("AllowAll");
 
             app.MapControllers();
 
