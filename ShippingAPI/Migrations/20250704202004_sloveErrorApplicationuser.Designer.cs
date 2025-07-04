@@ -12,8 +12,8 @@ using ShippingAPI.Data;
 namespace ShippingAPI.Migrations
 {
     [DbContext(typeof(ShippingContext))]
-    [Migration("20250702130632_addingSomeRelationsAndChanges")]
-    partial class addingSomeRelationsAndChanges
+    [Migration("20250704202004_sloveErrorApplicationuser")]
+    partial class sloveErrorApplicationuser
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -203,6 +203,23 @@ namespace ShippingAPI.Migrations
                     b.ToTable("AccountTransactions");
                 });
 
+            modelBuilder.Entity("ShippingAPI.Models.ActionType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ActionTypes");
+                });
+
             modelBuilder.Entity("ShippingAPI.Models.AdminGroup", b =>
                 {
                     b.Property<int>("Id")
@@ -278,6 +295,12 @@ namespace ShippingAPI.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("CurrentToken")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -288,6 +311,9 @@ namespace ShippingAPI.Migrations
                     b.Property<string>("FullName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -314,6 +340,9 @@ namespace ShippingAPI.Migrations
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("TokenExpiration")
+                        .HasColumnType("datetime2");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
@@ -628,6 +657,9 @@ namespace ShippingAPI.Migrations
                     b.Property<string>("CourierId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<string>("CourierProfileUserId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
@@ -693,6 +725,8 @@ namespace ShippingAPI.Migrations
 
                     b.HasIndex("CourierId");
 
+                    b.HasIndex("CourierProfileUserId");
+
                     b.HasIndex("GovernorateId");
 
                     b.HasIndex("RejectionReasonId");
@@ -741,17 +775,38 @@ namespace ShippingAPI.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Description")
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Permissions");
+                });
+
+            modelBuilder.Entity("ShippingAPI.Models.PermissionAction", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ActionTypeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PermissionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ActionTypeId");
+
+                    b.HasIndex("PermissionId");
+
+                    b.ToTable("PermissionActions");
                 });
 
             modelBuilder.Entity("ShippingAPI.Models.RejectionReason", b =>
@@ -866,6 +921,28 @@ namespace ShippingAPI.Migrations
                     b.ToTable("TraderProfiles");
                 });
 
+            modelBuilder.Entity("ShippingAPI.Models.UserPermission", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("PermissionActionId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PermissionActionId");
+
+                    b.ToTable("UserPermissions");
+                });
+
             modelBuilder.Entity("ShippingAPI.Models.Weight", b =>
                 {
                     b.Property<int>("Id")
@@ -966,7 +1043,7 @@ namespace ShippingAPI.Migrations
                         .IsRequired();
 
                     b.HasOne("ShippingAPI.Models.Permission", "Permission")
-                        .WithMany("UserGroupPermissions")
+                        .WithMany()
                         .HasForeignKey("PermissionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1135,9 +1212,13 @@ namespace ShippingAPI.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ShippingAPI.Models.CourierProfile", "CourierProfile")
-                        .WithMany("Orders")
+                    b.HasOne("ShippingAPI.Models.TraderProfile", "CourierProfile")
+                        .WithMany()
                         .HasForeignKey("CourierId");
+
+                    b.HasOne("ShippingAPI.Models.CourierProfile", null)
+                        .WithMany("Orders")
+                        .HasForeignKey("CourierProfileUserId");
 
                     b.HasOne("ShippingAPI.Models.Governorate", "Governorate")
                         .WithMany()
@@ -1179,6 +1260,25 @@ namespace ShippingAPI.Migrations
                         .IsRequired();
 
                     b.Navigation("Order");
+                });
+
+            modelBuilder.Entity("ShippingAPI.Models.PermissionAction", b =>
+                {
+                    b.HasOne("ShippingAPI.Models.ActionType", "ActionType")
+                        .WithMany()
+                        .HasForeignKey("ActionTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ShippingAPI.Models.Permission", "Permission")
+                        .WithMany("PermissionActions")
+                        .HasForeignKey("PermissionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ActionType");
+
+                    b.Navigation("Permission");
                 });
 
             modelBuilder.Entity("ShippingAPI.Models.Safe", b =>
@@ -1225,6 +1325,17 @@ namespace ShippingAPI.Migrations
                     b.Navigation("Governorate");
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ShippingAPI.Models.UserPermission", b =>
+                {
+                    b.HasOne("ShippingAPI.Models.PermissionAction", "PermissionAction")
+                        .WithMany("UserPermissions")
+                        .HasForeignKey("PermissionActionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PermissionAction");
                 });
 
             modelBuilder.Entity("ShippingAPI.Models.AdminGroup", b =>
@@ -1302,7 +1413,12 @@ namespace ShippingAPI.Migrations
 
             modelBuilder.Entity("ShippingAPI.Models.Permission", b =>
                 {
-                    b.Navigation("UserGroupPermissions");
+                    b.Navigation("PermissionActions");
+                });
+
+            modelBuilder.Entity("ShippingAPI.Models.PermissionAction", b =>
+                {
+                    b.Navigation("UserPermissions");
                 });
 
             modelBuilder.Entity("ShippingAPI.Models.RejectionReason", b =>
